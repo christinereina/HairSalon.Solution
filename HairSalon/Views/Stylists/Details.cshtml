@@ -6,9 +6,9 @@
 @using HairSalon.Models;
 @model HairSalon.Models.Stylist;
 
-<h2>Stylist Details</h2>
+<h1>Stylist Details</h1>
 <hr />
-<h3>@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)</h3>
+<h2>@Html.DisplayFor(model => model.Name)</h2>
 <h3>@Html.DisplayNameFor(model => model.ServicesOffered): @Html.DisplayFor(model => model.ServicesOffered)</h3>
 
 
@@ -17,12 +17,12 @@
   <h3>No Clients found just yet!</h3>
 }
 
-@* @foreach (Client client in @Model.Clients)
+<h2>Clients</h2>
+@foreach (Client client in @Model.Clients)
 {
-  <h4>Name: @client.Name</h4>
-} *@
+  <h3>@client.Name</h3>
+}
 
-
-<p>@Html.ActionLink("Back to Stylists", "Index")</p>
 <p>@Html.ActionLink("Edit Stylist", "Edit", new { id = Model.StylistId })</p>
 <p>@Html.ActionLink("Delete Stylist", "Delete", new { id = Model.StylistId })</p>
+<p>@Html.ActionLink("Back to Stylists", "Index")</p>
