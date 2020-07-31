@@ -34,5 +34,14 @@ namespace HairSalon.Controllers
       _db.SaveChanges();
       return RedirectToAction("Index");
     }
+    
+    [HttpGet, ActionName("Details")]
+    public ActionResult Details(int id)
+    {
+      Stylist thisStylist = _db.Stylists.FirstOrDefault(stylist => stylist.StylistId == id);
+      thisStylist.Clients = _db.Clients.Where(client => client.StylistId == id).ToList();
+      return View(thisStylist);
+    }
+
   }
 }
