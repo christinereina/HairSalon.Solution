@@ -1,9 +1,14 @@
+@using HairSalon.Models;
+@model List<HairSalon.Models.Stylist>;
+
 @{
   Layout = "_Layout";
 }
 
-@using HairSalon.Models;
-@model List<HairSalon.Models.Stylist>;
+@Html.ActionLink("Home |", "Index", "Home")
+@Html.ActionLink("Stylists | ", "Index", "Stylists")
+@Html.ActionLink("Clients", "Index", "Clients")
+
 
 <h1>Stylists</h1>
 
@@ -19,4 +24,3 @@
 
 <p>@Html.ActionLink("Add new Stylist", "Create")</p>
 
-<p>@Html.ActionLink("Home", "Index", "Home")</p>
