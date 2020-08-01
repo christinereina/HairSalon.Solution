@@ -1,10 +1,13 @@
+@using HairSalon.Models;
+@model HairSalon.Models.Stylist;
   
 @{
   Layout = "_Layout";
 }
 
-@using HairSalon.Models;
-@model HairSalon.Models.Stylist;
+@Html.ActionLink("Home |", "Index", "Home")
+@Html.ActionLink("Stylists | ", "Index", "Stylists")
+@Html.ActionLink("Clients", "Index", "Clients")
 
 <h1>Stylist Details</h1>
 <hr />
@@ -22,7 +25,6 @@
 {
   <h3>@client.Name</h3>
 }
-
-<p>@Html.ActionLink("Edit Stylist", "Edit", new { id = Model.StylistId })</p>
-<p>@Html.ActionLink("Delete Stylist", "Delete", new { id = Model.StylistId })</p>
-<p>@Html.ActionLink("Back to Stylists", "Index")</p>
+<h3>@Html.ActionLink("Edit Stylist", "Edit", new { id = Model.StylistId })</h3>
+<h3>@Html.ActionLink("Delete Stylist", "Delete", new { id = Model.StylistId })</h3>
+<h3>@Html.ActionLink("Back to Stylists", "Index")</h3>

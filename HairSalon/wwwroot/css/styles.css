@@ -1,5 +1,15 @@
 body {
 padding-top: 25px;
 margin: 50px;
-background-color: lightcyan;
+background-color: burlywood;
+font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  font-family: 'Calistoga', cursive;
+  font-size: 80px;
+}
+
+h2 {
+  font-family: 'Beth Ellen', cursive;
 }

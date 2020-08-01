@@ -1,9 +1,13 @@
+@using HairSalon.Models;
+@model List<HairSalon.Models.Client>;
+
 @{
   Layout = "_Layout";
 }
 
-@using HairSalon.Models;
-@model List<HairSalon.Models.Client>;
+@Html.ActionLink("Home |", "Index", "Home")
+@Html.ActionLink("Stylists | ", "Index", "Stylists")
+@Html.ActionLink("Clients", "Index", "Clients")
 
 <h1>Clients</h1>
 
@@ -14,9 +18,7 @@
 
 @foreach (Client client in Model)
 {
-  <li>@Html.ActionLink($"{client.Name}", "Details", new { id = client.ClientId }) | @client.Stylist.Name</li>
+  <h2>@Html.ActionLink($"{client.Name}", "Details", new { id = client.ClientId }) | @client.Stylist.Name</h2>
 }
 
-<p>@Html.ActionLink("Add new Client", "Create")</p>
-
-<p>@Html.ActionLink("Home", "Index", "Home")</p>
+<h3>@Html.ActionLink("Add new Client", "Create")</h3>

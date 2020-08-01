@@ -8,7 +8,7 @@
 @Html.ActionLink("Stylists | ", "Index", "Stylists")
 @Html.ActionLink("Clients", "Index", "Clients")
 
-<h4>Add a new Stylist</h4>
+<h2>Add a new Stylist</h2>
 @using (Html.BeginForm())
 {
     @Html.LabelFor(model => model.Name)<br>
@@ -17,4 +17,4 @@
     @Html.TextBoxFor(model => model.ServicesOffered)<br><br>
     <input type="submit" value="Add new Stylist" />
 }
-<br>@Html.ActionLink("Show all Stylists", "Index")</br>
+<h3>@Html.ActionLink("Show all Stylists", "Index")</h3>

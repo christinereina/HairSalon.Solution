@@ -14,13 +14,13 @@
 
 @if (@Model.Count == 0)
 {
-  <h3>No stylists have been added yet!!</h3>
+  <h2>No stylists have been added yet!!</h2>
 } 
 
 @foreach (Stylist stylist in Model)
 {
-  <li>@Html.ActionLink($"{stylist.Name}", "Details", new { id = stylist.StylistId })</li>
+<h2>@Html.ActionLink($"{stylist.Name}", "Details", new { id = stylist.StylistId })</h2>
 }
 
-<p>@Html.ActionLink("Add new Stylist", "Create")</p>
+<h3>@Html.ActionLink("Add new Stylist", "Create")</h3>
 
