@@ -7,9 +7,36 @@ font-family: 'Open Sans', sans-serif;
 
 h1 {
   font-family: 'Calistoga', cursive;
-  font-size: 80px;
+  font-size: 120px;
+  text-align: center;
 }
 
 h2 {
   font-family: 'Beth Ellen', cursive;
 }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.image,.body {
+  grid-row: 1 / 6;
+  align-self: center;
+}
+
+.image { 
+  grid-column: 1 / 6; 
+}
+
+.body { 
+  grid-column: 5 / 6;
+  padding: .45em;
+  box-shadow: 4px 4px 10px rgba(0,0,0,.25);
+}
+
+
+/* img {
+  max-width: 100%;
+  display: block;
+} */
