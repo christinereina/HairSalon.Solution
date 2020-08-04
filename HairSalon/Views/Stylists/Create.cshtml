@@ -3,12 +3,13 @@
 @{
   Layout = "_Layout";
 }
-
+  <center>
 @Html.ActionLink("Home |", "Index", "Home")
 @Html.ActionLink("Stylists | ", "Index", "Stylists")
 @Html.ActionLink("Clients", "Index", "Clients")
 
-<h2>Add a new Stylist</h2>
+<h1><i>Add</i></h1>
+<h1>Stylist</h1>
 @using (Html.BeginForm())
 {
     @Html.LabelFor(model => model.Name)<br>
@@ -18,3 +19,4 @@
     <input type="submit" value="Add new Stylist" />
 }
 <h3>@Html.ActionLink("Show all Stylists", "Index")</h3>
+  </center>

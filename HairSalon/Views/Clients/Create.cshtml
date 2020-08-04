@@ -4,18 +4,20 @@
   Layout = "_Layout";
 }
 
-<h4>Add a new <b>Client</b></h4>
+<h1><i>Add</i>
+<br>Client</h1>
 
+<center>
 @using (Html.BeginForm())
 {
     @Html.LabelFor(model => model.Name)
-    @Html.TextBoxFor(model => model.Name)
+    @Html.TextBoxFor(model => model.Name)<br>
 
     @Html.LabelFor(model => model.Service)
-    @Html.TextBoxFor(model => model.Service)
+    @Html.TextBoxFor(model => model.Service)<br>
 
     @Html.LabelFor(model => model.Appointment)
-    @Html.TextBoxFor(model => model.Appointment)
+    @Html.TextBoxFor(model => model.Appointment)<br>
 
     @Html.LabelFor(model => model.Stylist)
     @Html.DropDownList("StylistId")
@@ -23,3 +25,4 @@
     <input type="submit" value="Add new Client" class="btn btn-default" />
 }
 <h3>@Html.ActionLink("Show all Clients", "Index")</h3>
+</center>
