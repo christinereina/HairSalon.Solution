@@ -1,4 +1,6 @@
-# _Hairon © Salon_
+# _Saint Hairon © Salon_
+
+![Preview](./HairSalon/wwwroot/img/preview.png)
 
 #### _Database Basics, Indepedent Project for Epicodus, 07.31.2020_
 
@@ -10,11 +12,12 @@ This application is a MVC web application to help Hairon manage their stylists a
 
 ## Specifications
 
+User is greeted with a splash Welcome page. 
+
 | Behavior   |   Input   |  Output | 
 |----------|:-------------:|------:|
-| User is greeted with the homepage| n/a | na/
-| User clicks on `Stylists`| n/a | User is presented with a list of current stylists (if there is any). If there is no Stylists the page will display "No stylists added yet". The user will also have the option to ADD a Stylist
-| User clicks on Stylist Name | Click: 'Luna' | Stylist Details will appear: Name, Services Offered, Clients. User will have the option to: Edit Stylist, Delete Stylist
+| User clicks on `Stylists from navigation bar`| n/a | User is presented with a list of current stylists (if there is any). If there is no Stylists, the page will display "No stylists added yet". The user will also have the option to ADD a Stylist
+| User clicks on available Stylist Name | Click: 'Luna' | Stylist Details will appear: Name, Services Offered, Clients. User will have the option to: Edit Stylist, Delete Stylist
 
 ## Setup/Installation Requirements 
 
@@ -64,7 +67,7 @@ N/A
 
 ## Support and contact details
 
-_Please feel free to contact the author through GitHub **christinereina** with any feedback, questions or concerns._
+_Please feel free to contact the author through GitHub **[christinereina](https://github.com/christinereina)** with any feedback, questions or concerns._
 
 
 ## Technologies Used
