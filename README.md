@@ -1,4 +1,4 @@
-# _Saint Hairon © Salon_
+# <h1 align = "center"> Saint Hairon © Salon
 
 ![Preview](./HairSalon/wwwroot/img/preview.png)
 
