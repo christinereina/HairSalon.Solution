@@ -10,6 +10,25 @@
 
 This application is a MVC web application to help Hairon manage their stylists and their clients. Hairon should be able to add a list of stylists working at the salon, and for each stylist, add clients who see that stylist. The stylists have specific specialties, so each client can only see (belong to) a single stylist.
 
+## Setup/Installation Requirements 
+
+1. Clone this [repository](https://github.com/christinereina/HairSalon.Solution) from GitHub
+2. Open the downloaded directory in a text editor of your choice. (VSCode, Atom, etc.)
+3. Once you have the directory open, navigate to the top level of the directory and create a `appsettings.json` file which contains:
+```
+{
+  "ConnectionStrings": {
+      "DefaultConnection": "Server=localhost;Port=3306;database=christine_augustine;uid=root;pwd=epicodus;"
+  }
+}
+```
+4. Then, install the REPL dotnet script, run dotnet tool `install -g dotnet-script` in your terminal.
+5. To install the necessary dependencies, run the following commands:
+```
+dotnet restore
+dotnet build
+dotnet run
+```
 
 ### Installing and Configuring MySQL
 
@@ -46,6 +65,9 @@ CREATE TABLE `stylists` (
   PRIMARY KEY (`StylistId`)
 );
 ```
+3. Once it connects, you should be all set!
+
+<h6 align = "right">[see detailed instructions for windows/mac](https://www.learnhowtoprogram.com/c-and-net/getting-started-with-c/installing-and-configuring-mysql)
 
 ## Specifications
 
@@ -76,7 +98,7 @@ _Please feel free to contact the author through GitHub **[christinereina](https:
 * Git Version Control 
 * GitHub
 
-### Special Thanks
+### <h3 align = "center"> Special Thanks
 
 This web application was highly inspired by Beyonce's film, ['Black is King'](https://beyonce.com/) and uses different images from her film. Also, this application was stylistically inspired by [Saint Heron](https://www.saintheron.com/).
 
