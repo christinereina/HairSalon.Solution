@@ -10,15 +10,6 @@
 
 This application is a MVC web application to help Hairon manage their stylists and their clients. Hairon should be able to add a list of stylists working at the salon, and for each stylist, add clients who see that stylist. The stylists have specific specialties, so each client can only see (belong to) a single stylist.
 
-## Specifications
-
-User is greeted with a splash Welcome page. 
-
-| Behavior   |   Input   |  Output | 
-|----------|:-------------:|------:|
-| User clicks on `Stylists from navigation bar`| n/a | User is presented with a list of current stylists (if there is any). If there is no Stylists, the page will display "No stylists added yet". The user will also have the option to ADD a Stylist
-| User clicks on available Stylist Name | Click: 'Luna' | Stylist Details will appear: Name, Services Offered, Clients. User will have the option to: Edit Stylist, Delete Stylist
-
 ## Setup/Installation Requirements 
 
 1. Clone this [repository](https://github.com/christinereina/HairSalon.Solution) from GitHub
@@ -44,8 +35,12 @@ dotnet run
 1. Open [MySQL](https://www.mysql.com/) + Local 3306
 2. Use this query selection to create the database:
 ```
+CREATE DATABASE `christine_augustine`; 
+
+USE `christine_augustine`;
+
 CREATE TABLE `clients` (
-  `ClientId` int(11) NOT NULL,
+  `ClientId` int(11) NOT NULL AUTO_INCREMENT,
   `StylistId` int(11) NOT NULL,
   `Name` varchar(255) DEFAULT NULL,
   `Service` varchar(255) DEFAULT NULL,
@@ -60,6 +55,15 @@ CREATE TABLE `stylists` (
   PRIMARY KEY (`StylistId`)
 );
 ```
+
+## Specifications
+
+User is greeted with a splash Welcome page. 
+
+| Behavior   |   Input   |  Output | 
+|----------|:-------------:|------:|
+| User clicks on `Stylists from navigation bar`| n/a | User is presented with a list of current stylists (if there is any). If there is no Stylists, the page will display "No stylists added yet". The user will also have the option to ADD a Stylist
+| User clicks on available Stylist Name | Click: 'Luna' | Stylist Details will appear: Name, Services Offered, Clients. User will have the option to: Edit Stylist, Delete Stylist
 
 ## Known Bugs
 
